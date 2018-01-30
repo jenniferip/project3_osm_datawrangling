@@ -1,12 +1,26 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import xml.etree.ElementTree as ET  # Use cElementTree or lxml if too slow
+"""
+This file is used to sample the large london_data.osm file, which is useful
+when initially building the Python functions to audit the data, as you can run
+and check those functions on a smaller sample of the data before running it on
+the whole dataset.
 
-OSM_FILE = "london_data.osm"  # Replace this with your osm file
+To get a smaller sample, increase the value of k. To get a larger sample,
+decrease the value of k. k specifies every k-th top level element to extract.
+
+NOTE: This code was taken directly from Udacity's Wrangle OpenStreetMap Data
+Project details.
+"""
+
+import xml.etree.ElementTree as ET
+
+OSM_FILE = "london_data.osm"
 SAMPLE_FILE = "london_sample.osm"
 
-k = 100 # Parameter: take every k-th top level element
+k = 20
+
 
 def get_element(osm_file, tags=('node', 'way', 'relation')):
     """Yield element if it is the right type of tag
