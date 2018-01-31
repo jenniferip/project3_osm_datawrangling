@@ -3,7 +3,8 @@
 `/osm_project` is a folder containing the files used audit and clean OSM XML data from Mapzen's metro extracts. It also contains files to convert the data into dictionaries with a particular schema, validate the schema, and then create csv files to create and insert into my own queriable database, called 'london_osm.db'. Finally, it also holds files with SQL queries meant to explore our database and then files to run those queries. All queries are run using sqlite3.
 
 Additionally, much of the code is credited to Udacitys' OpenStreetMap Case Study lesson and quizzes so there is code taken from that not written by myself mixed with also code written by myself that was originally written as solutions to quizzes. Finally, the `.html` file is inspired by the sample project provided by Carl Ward.  
-     
+
+** Note: ** Due to Github's space limitations, the following files are not included: `london_data.osm`, `london_sample.osm`, `ways_tags.csv`, and `ways_nodes.csv`. You may obtain my original London OSM extract through OpenStreetMaps metro data extract feature and then build the sample and csv files using the appropriate files below.
 
 ### Files
 
